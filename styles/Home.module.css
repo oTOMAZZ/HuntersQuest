@@ -1,129 +1,153 @@
-.container {
-  padding: 0 2rem;
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+
+/*STYLES MAIN PAGE */
+.FormMain {
+  margin-top: 10%;
+  margin-left: 40%;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(64, 114, 51, 0.637);
+
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.textHeader {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-top: 30px;
+  color: rgb(0, 0, 0);
+  margin-left: 37%;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 25px;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.p {
+  display: block;
+  color: black;
   text-align: center;
+  font-size: 50px;
+  font-family: 'MedievalSharp', cursive;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.name {
+  display: inline-block;
+  color: black;
+  font-size: 40px;
+  font-family: 'MedievalSharp', cursive;
+  margin-left: 12%;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.input {
+  display: block;
+  width: 280px;
+  height: 25px;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.button1 {
+  margin-left: 35%;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.button-33:hover {
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+/*STYLES BATTLE PAGE */
+.introducao {
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 30px;
+  font-size: 30px;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.Wolf {
+  display: flex;
+  border-radius: 50%;
+  margin-left: 1100px;
+  margin-top: -500px;
+
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.Iop {
+  display: inline;
+  border-radius: 50%;
+  margin-left: 500px;
+  margin-top: 300px;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.statsPatternPlayer {
+  font-family: 'MedievalSharp', cursive;
+  margin-left: 26%;
+  background-color: rgba(136, 140, 135, 0.637);
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  padding: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+.statsPatternMob {
+  font-family: 'MedievalSharp', cursive;
+  margin-left: 1100px;
+  background-color: rgba(136, 140, 135, 0.637);
+  width: 250px;
+  height: 220px;
+  text-align: center;
+  padding: 7px;
+
 }
+
+.caracteristicas {
+  display: flex;
+  margin-left: 80%;
+  font-family: 'MedievalSharp', cursive;
+  background-color: blueviolet;
+}
+
+.select {
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  color: #0071c5
+}
+
+.button2 {
+  margin-left: 47%;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'MedievalSharp', cursive;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 26px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+.Image {
+  z-index: -2;
+}
+
+/*# sourceMappingURL=Home.module.css.map */
